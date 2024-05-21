@@ -47,3 +47,35 @@ function sumBetween(start, end) {
 
 console.log('Fn:', sumBetween(42, 3064));
 console.log('Sum of numbers 1 to 100:', sumBetween(1, 100));
+
+/* 
+INFINITE EXAMPLE BELOW
+
+for (;;) {
+  console.log('INFINITE!');
+}
+
+*/
+
+/* WHILE LOOPS */
+
+// example:
+// A number if it is even, divide by 2.
+// If it is odd, multiple by 3 and add 1.
+
+function coolMath(num) {
+  console.log('Starting point:', num);
+  while (num > 1) {
+    if (num % 2 === 0) {
+      // has to be an even number
+      num /= 2;
+    } else {
+      num = num * 3 + 1;
+    }
+    console.log(num);
+  }
+
+  console.log('End of the loop');
+}
+
+coolMath(57);
