@@ -26,3 +26,24 @@ num -= 1;
 num *= 2;
 num++; // same as +=1, just adds 1 to the number
 num--; // same as -=1
+
+/* What is the SUM of all numbers between 42 and 3064 */
+/* NOTE: create variable ABOVE code block.
+otherwise it doesn't know if it's defined*/
+let sum = 0;
+for (let start = 42; start <= 3064; start++) {
+  sum += start;
+}
+console.log(sum);
+
+// another example:
+function sumBetween(start, end) {
+  let total = 0;
+  for (let count = start; count <= end; count++) {
+    total += count;
+  }
+  return total;
+}
+
+console.log('Fn:', sumBetween(42, 3064));
+console.log('Sum of numbers 1 to 100:', sumBetween(1, 100));
