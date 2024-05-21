@@ -75,3 +75,37 @@ console.log(numbs);
 [1] 
 [10, 20, 30]
 */
+
+// SCOPE
+
+let module_var = 'module';
+function fn() {
+  let function_var = 'function';
+  if (true) {
+    let block_var = 'block';
+  }
+}
+
+// scope with for loops is "block scope" variables
+// dont exists after the loop unless you declared them in advance
+
+/* LOOPS AND ARRAYS */
+
+let numbas = [];
+
+for (let i = 100; i >= 1; i--) {
+  numbas.push[i];
+}
+
+console.log(numbas);
+
+let product = 1;
+
+// for loop for arrays
+// going through and making an index for each value in the array
+for (let i = 0; i < numbas.length; i++) {
+  product *= numbas[i];
+  // product *= numbas[1]
+}
+
+console.log(product);
