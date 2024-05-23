@@ -50,23 +50,25 @@ console.log('Sum of numbers 1 to 100:', sumBetween(1, 100));
 
 // example:
 
-let min = numbers[0]; // starts with the first number
+function getMin(numbers) {
+  let min = numbers[0]; // starts with the first number
 
-// we're saying start with the # in index position 1
-// then, check the condition: i < numbers.length
-// if true, go into loop. otherwise, end loop
-// after the code in the loop runs, run i++ (increments, moving the index to the next position)
-// then, go back to step 2 (check the condition i < numbers.length)
+  // we're saying start with the # in index position 1
+  // then, check the condition: i < numbers.length
+  // if true, go into loop. otherwise, end loop
+  // after the code in the loop runs, run i++ (increments, moving the index to the next position)
+  // then, go back to step 2 (check the condition i < numbers.length)
 
-for (let i = 0; i < numbers.length; i++) {
-  // how do I read a value in the numbers array using index?
-  numbers[i]; // current item in the array (goes up as we loop)
+  for (let i = 0; i < numbers.length; i++) {
+    // how do I read a value in the numbers array using index?
+    numbers[i]; // current item in the array (goes up as we loop)
 
-  if (numbers[i] < min) {
-    min = numbers[i];
+    if (numbers[i] < min) {
+      min = numbers[i];
+    }
   }
+  return min;
 }
-return min;
 
 /* 
 INFINITE EXAMPLE BELOW
