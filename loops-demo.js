@@ -48,6 +48,20 @@ function sumBetween(start, end) {
 console.log('Fn:', sumBetween(42, 3064));
 console.log('Sum of numbers 1 to 100:', sumBetween(1, 100));
 
+// example:
+
+let min = numbers[0]; // starts with the first number
+
+for (let i = 0; i < numbers.length; i++) {
+  // how do I read a value in the numbers array using index?
+  numbers[i]; // current item in the array (goes up as we loop)
+
+  if (numbers[i] < min) {
+    min = numbers[i];
+  }
+}
+return min;
+
 /* 
 INFINITE EXAMPLE BELOW
 
